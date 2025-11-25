@@ -25,10 +25,11 @@ function scrollToTitle(className: string) {
     el?.scrollIntoView({ behavior: "smooth" });
 }
 const idDev = false;
+import bgImabe from '../public/9a.png'
 export default function App() {
     return (
         <div className="app-container" style={{ position: "relative" }}>
-            <img src="/src/reference/9a.png" alt="content" />
+            <img src={bgImabe} alt="content" />
             <div
                 className="nav-buttons"
                 style={{
