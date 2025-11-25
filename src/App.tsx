@@ -12,7 +12,58 @@ const commonStyle: React.CSSProperties = {
     padding: "0 8vw",
     alignItems: "center",
 };
+const ExtraText = () => {
+    return (
+        <div
+            style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-around",
+                padding: "2vw",
+                color: "#333",
+                fontSize: "1.4vw",
 
+                filter: "blur(0.1px)",
+                // lineHeight: '1.25',
+                backgroundColor: "#f5f0e8",
+            }}
+        >
+            <div
+                style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2vw",
+                    // marginBottom: '1vw',
+                    color: "#4d4c4cff",
+                    opacity: 0.9,
+                }}
+            >
+                中国林业集团召开党委专题(扩大)会议传达学习党的二十届四中全会精神
+            </div>
+            <div style={{ opacity: 0.9 }}>
+                <div
+                    style={{
+                        fontSize: "1.0vw",
+                        fontWeight: "600",
+                        marginBottom: "0.8vw",
+                        color: "#555",
+                    }}
+                >
+                    10月30日，中国林业集团召开党委（扩大）会议，传达学习党的二十届四中全会精神。会议认真学习《中国共产党第二十届中央委员会第四次全体会议公报》、习近平总书记关于《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》的说明以及习近平总书记在主持召开党外人士座谈会上的重要讲话精神，研究部署贯彻落实举措。【查看原文】
+                </div>
+                <div
+                    style={{
+                        fontSize: "1.1vw",
+                        cursor: "pointer",
+                    }}
+                >
+                    【查看全文】
+                </div>
+            </div>
+        </div>
+    );
+};
 const titles = [
     { className: "title1", top: "70vw" },
     { className: "title2", top: "120vw" },
@@ -26,18 +77,19 @@ function scrollToTitle(className: string) {
 }
 const idDev = false;
 import bgImabe from "../public/9a.webp";
-import newimg from "../public/new.JPG"; 
+import newimg from "../public/new.JPG";
 export default function App() {
     return (
         <div className="app-container" style={{ position: "relative" }}>
-            <img src={newimg} 
-            style={{
-                position:'absolute',
-                width:'30vw',
-                height:'20vw',
-                top:'178vw',
-                left:'12vw'
-            }}
+            <img
+                src={newimg}
+                style={{
+                    position: "absolute",
+                    width: "30vw",
+                    height: "20vw",
+                    top: "178vw",
+                    left: "12vw",
+                }}
             />
             <img src={bgImabe} alt="content" />
             <div
@@ -106,10 +158,12 @@ export default function App() {
                     width: "50vw",
                     left: "40vw",
                     height: "20vw",
-                    top: "175vw",
+                    top: "178vw",
                     background: idDev ? "red" : "",
                 }}
-            ></div>
+            >
+                <ExtraText />
+            </div>
             <div
                 className="section33"
                 onClick={() => {
