@@ -94,7 +94,7 @@ export default function App() {
             <div
                 className="section0"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html");
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -108,7 +108,7 @@ export default function App() {
             <div
                 className="section1"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html");
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -122,7 +122,7 @@ export default function App() {
             <div
                 className="section2"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html");
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -136,7 +136,7 @@ export default function App() {
             <div
                 className="section2"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html");
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -150,7 +150,7 @@ export default function App() {
             <div
                 className="section33"
                 onClick={() => {
-                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg");
+                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -166,7 +166,7 @@ export default function App() {
             <div
                 className="section33"
                 onClick={() => {
-                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg");
+                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -180,7 +180,7 @@ export default function App() {
             <div
                 className="section4"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html");
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
                 }}
                 style={{
                     position: "absolute",
@@ -194,7 +194,7 @@ export default function App() {
             <div
                 className="section44"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html");
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
                 }}
                 style={{
                     position: "absolute",
