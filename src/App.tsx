@@ -75,6 +75,7 @@ function scrollToTitle(className: string) {
 }
 const idDev = false;
 import bgImabe from "../public/9a.webp";
+// @ts-ignore
 import newimg from "../public/new.JPG";
 export default function App() {
     return (
