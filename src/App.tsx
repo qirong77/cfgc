@@ -25,7 +25,7 @@ function scrollToTitle(className: string) {
     el?.scrollIntoView({ behavior: "smooth" });
 }
 const idDev = false;
-import bgImabe from '../public/9a.png'
+import bgImabe from '../public/9a.webp'
 export default function App() {
     return (
         <div className="app-container" style={{ position: "relative" }}>
