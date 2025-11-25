@@ -26,9 +26,19 @@ function scrollToTitle(className: string) {
 }
 const idDev = false;
 import bgImabe from "../public/9a.webp";
+import newimg from "../public/new.JPG"; 
 export default function App() {
     return (
         <div className="app-container" style={{ position: "relative" }}>
+            <img src={newimg} 
+            style={{
+                position:'absolute',
+                width:'30vw',
+                height:'20vw',
+                top:'178vw',
+                left:'12vw'
+            }}
+            />
             <img src={bgImabe} alt="content" />
             <div
                 className="section0"
