@@ -24,8 +24,6 @@ const ExtraText = () => {
                 padding: "2vw",
                 color: "#333",
                 fontSize: "1.4vw",
-
-                filter: "blur(0.1px)",
                 // lineHeight: '1.25',
                 backgroundColor: "#f5f0e8",
             }}
