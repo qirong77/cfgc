@@ -24,3 +24,7 @@ html, body, #root {
   height: auto;
   display: block;
 }
+
+.title button {
+    flex: 1;
+}
