@@ -26,10 +26,34 @@ export default function App() {
                     top: "37vw",
                 }}
             >
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
+                <button
+                    onClick={() => {
+                        document.querySelector(".title1")?.scrollIntoView();
+                    }}
+                >
+                    1
+                </button>
+                <button
+                    onClick={() => {
+                        document.querySelector(".title2")?.scrollIntoView();
+                    }}
+                >
+                    2
+                </button>
+                <button
+                    onClick={() => {
+                        document.querySelector(".title3")?.scrollIntoView();
+                    }}
+                >
+                    3
+                </button>
+                <button
+                    onClick={() => {
+                        document.querySelector(".title4")?.scrollIntoView();
+                    }}
+                >
+                    4
+                </button>
             </div>
             <div
                 className="title1"
