@@ -24,7 +24,7 @@ function scrollToTitle(className: string) {
     const el = document.querySelector(`.${className}`);
     el?.scrollIntoView({ behavior: "smooth" });
 }
-
+const idDev = false;
 export default function App() {
     return (
         <div className="app-container" style={{ position: "relative" }}>
@@ -39,7 +39,7 @@ export default function App() {
                 {titles.map((item, idx) => (
                     <button
                         style={{
-                            opacity: 0,
+                            opacity: idDev ? 1 : 0,
                         }}
                         key={item.className}
                         onClick={() => scrollToTitle(item.className)}
@@ -49,7 +49,7 @@ export default function App() {
                 ))}
             </div>
             {titles.map((item) => (
-                <div key={item.className} className={item.className} style={{ ...commonStyle, top: item.top }}></div>
+                <div key={item.className} className={item.className} style={{ ...commonStyle, top: item.top, opacity: idDev ? 1 : 0 }}></div>
             ))}
         </div>
     );
