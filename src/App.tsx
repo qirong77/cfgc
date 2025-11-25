@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const commonStyle: React.CSSProperties = {
@@ -38,17 +37,19 @@ export default function App() {
                 }}
             >
                 {titles.map((item, idx) => (
-                    <button key={item.className} onClick={() => scrollToTitle(item.className)}>
+                    <button
+                        style={{
+                            opacity: 0,
+                        }}
+                        key={item.className}
+                        onClick={() => scrollToTitle(item.className)}
+                    >
                         {idx + 1}
                     </button>
                 ))}
             </div>
             {titles.map((item) => (
-                <div
-                    key={item.className}
-                    className={item.className}
-                    style={{ ...commonStyle, top: item.top }}
-                ></div>
+                <div key={item.className} className={item.className} style={{ ...commonStyle, top: item.top }}></div>
             ))}
         </div>
     );
