@@ -1,22 +1,29 @@
+import React from "react";
+
 export default function App() {
+    const commonStyle: React.CSSProperties = {
+        background: "color",
+        position: "absolute",
+        top: "37vw",
+        left: 0,
+        width: "100vw",
+        height: "8vw",
+        backgroundColor: "black",
+        opacity: 0.5,
+        display: "flex",
+        justifyContent: "space-around",
+        padding: "0 8vw",
+        alignItems: "center",
+    };
     return (
         <div className="app-container" style={{ position: "relative" }}>
             <img src="/src/reference/9a.png" alt="content" />
             <div
-                className="title"
+                className="nav-buttons"
                 style={{
                     background: "color",
                     position: "absolute",
                     top: "37vw",
-                    left: 0,
-                    width: "100vw",
-                    height: "5vw",
-                    backgroundColor: "black",
-                    opacity: 0.5,
-                    display: "flex",
-                    justifyContent: "space-around",
-                    padding: "0 8vw",
-                    alignItems: "center",
                 }}
             >
                 <button>1</button>
@@ -27,69 +34,29 @@ export default function App() {
             <div
                 className="title1"
                 style={{
-                    background: "color",
-                    position: "absolute",
-                    top: "72vw",
-                    left: 0,
-                    width: "100vw",
-                    height: "5vw",
-                    backgroundColor: "black",
-                    opacity: 0.5,
-                    display: "flex",
-                    justifyContent: "space-around",
-                    padding: "0 8vw",
-                    alignItems: "center",
+                    ...commonStyle,
+                    top: "70vw",
                 }}
             ></div>
             <div
                 className="title2"
                 style={{
-                    background: "color",
-                    position: "absolute",
+                    ...commonStyle,
                     top: "120vw",
-                    left: 0,
-                    width: "100vw",
-                    height: "5vw",
-                    backgroundColor: "black",
-                    opacity: 0.5,
-                    display: "flex",
-                    justifyContent: "space-around",
-                    padding: "0 8vw",
-                    alignItems: "center",
                 }}
             ></div>
             <div
                 className="title3"
                 style={{
-                    background: "color",
-                    position: "absolute",
-                    top: "155vw",
-                    left: 0,
-                    width: "100vw",
-                    height: "5vw",
-                    backgroundColor: "black",
-                    opacity: 0.5,
-                    display: "flex",
-                    justifyContent: "space-around",
-                    padding: "0 8vw",
-                    alignItems: "center",
+                    ...commonStyle,
+                    top: "153vw",
                 }}
             ></div>
             <div
                 className="title4"
                 style={{
-                    background: "color",
-                    position: "absolute",
-                    top: "192vw",
-                    left: 0,
-                    width: "100vw",
-                    height: "5vw",
-                    backgroundColor: "black",
-                    opacity: 0.5,
-                    display: "flex",
-                    justifyContent: "space-around",
-                    padding: "0 8vw",
-                    alignItems: "center",
+                    ...commonStyle,
+                    top: "190vw",
                 }}
             ></div>
         </div>

@@ -26,17 +26,10 @@ body,
     height: auto;
     display: block;
 }
-
-.title button {
-    flex: 1;
-}
-.sections section {
-    width: 100vw;
+.nav-buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
 }
-.sections section button {
-    width: 10vw;
-    height: 5vh;
+.nav-buttons button{
+    flex: 1;
 }
