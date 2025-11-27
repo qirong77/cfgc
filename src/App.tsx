@@ -22,7 +22,7 @@ const ExtraText = () => {
                 flexDirection: "column",
                 color: "#4d4d4dff",
                 fontSize: "6px",
-                padding: '10px',
+                padding: "10px",
                 backgroundColor: "#f5f0e8",
             }}
         >
@@ -62,10 +62,11 @@ function scrollToTitle(className: string) {
     const el = document.querySelector(`.${className}`);
     el?.scrollIntoView({ behavior: "smooth" });
 }
-const idDev = false;
+const idDev = true;
 import bgImabe from "../public/9a.webp";
 // @ts-ignore
 import newimg from "../public/new.JPG";
+import { Blocks } from "./blocks";
 export default function App() {
     return (
         <div className="app-container" style={{ position: "relative" }}>
@@ -83,7 +84,7 @@ export default function App() {
             <div
                 className="section0"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -97,7 +98,7 @@ export default function App() {
             <div
                 className="section1"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -111,7 +112,7 @@ export default function App() {
             <div
                 className="section2"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -125,7 +126,7 @@ export default function App() {
             <div
                 className="section2"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -139,7 +140,7 @@ export default function App() {
             <div
                 className="section33"
                 onClick={() => {
-                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg",'__blank');
+                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -155,7 +156,7 @@ export default function App() {
             <div
                 className="section33"
                 onClick={() => {
-                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg",'__blank');
+                    window.open("https://mp.weixin.qq.com/s/1gCiezzdCR7WY_obM5mpcg", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -169,7 +170,7 @@ export default function App() {
             <div
                 className="section4"
                 onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
+                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html", "__blank");
                 }}
                 style={{
                     position: "absolute",
@@ -180,20 +181,36 @@ export default function App() {
                     background: idDev ? "red" : "",
                 }}
             ></div>
-            <div
-                className="section44"
-                onClick={() => {
-                    window.open("http://www.sasac.gov.cn/n2588020/n2877938/n2879597/n2879599/c34788799/content.html",'__blank');
-                }}
+            <Blocks
                 style={{
-                    position: "absolute",
-                    width: "40vw",
-                    left: "10vw",
-                    height: "30vw",
-                    top: "225vw",
-                    background: idDev ? "red" : "",
+                    top: "224vw",
+                    left: "13vw",
+                    width: "36vw",
+                    height: "10vw",
                 }}
-            ></div>
+                isDev={idDev}
+                link="http://www.sasac.gov.cn/n4470048/n32559362/n34707712/n34707727/c34751894/content.html"
+            />
+            <Blocks
+                style={{
+                    top: "234vw",
+                    left: "13vw",
+                    width: "36vw",
+                    height: "10vw",
+                }}
+                isDev={idDev}
+                link="http://www.sasac.gov.cn/n4470048/n32559362/n34707712/n34707727/c34731297/content.html"
+            />
+            <Blocks
+                style={{
+                    top: "244vw",
+                    left: "13vw",
+                    width: "36vw",
+                    height: "10vw",
+                }}
+                link="http://www.sasac.gov.cn/n4470048/n32559362/n34707712/n34707727/c34729437/content.html"
+                isDev={idDev}
+            />
             <div
                 className="nav-buttons"
                 style={{
