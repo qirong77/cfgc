@@ -62,7 +62,7 @@ function scrollToTitle(className: string) {
     const el = document.querySelector(`.${className}`);
     el?.scrollIntoView({ behavior: "smooth" });
 }
-const idDev = true;
+const idDev = import.meta.env.DEV;
 import bgImabe from "../public/9a.webp";
 // @ts-ignore
 import newimg from "../public/new.JPG";
@@ -188,7 +188,7 @@ export default function App() {
                     width: "36vw",
                     height: "10vw",
                 }}
-                isDev={idDev}
+                
                 link="http://www.sasac.gov.cn/n4470048/n32559362/n34707712/n34707727/c34751894/content.html"
             />
             <Blocks
@@ -198,7 +198,7 @@ export default function App() {
                     width: "36vw",
                     height: "10vw",
                 }}
-                isDev={idDev}
+                
                 link="http://www.sasac.gov.cn/n4470048/n32559362/n34707712/n34707727/c34731297/content.html"
             />
             <Blocks
@@ -209,7 +209,7 @@ export default function App() {
                     height: "10vw",
                 }}
                 link="http://www.sasac.gov.cn/n4470048/n32559362/n34707712/n34707727/c34729437/content.html"
-                isDev={idDev}
+                
             />
             <div
                 className="nav-buttons"

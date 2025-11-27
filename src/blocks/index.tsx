@@ -1,4 +1,5 @@
-export function Blocks(props: { style?: React.CSSProperties; title?: string; link?: string; isDev: boolean }) {
+export function Blocks(props: { style?: React.CSSProperties; title?: string; link?: string }) {
+    const isDev = import.meta.env.DEV;
     return (
         <div
             onClick={() => {
@@ -10,7 +11,7 @@ export function Blocks(props: { style?: React.CSSProperties; title?: string; lin
                 left: "10vw",
                 height: "20vw",
                 top: "175vw",
-                background: props.isDev ? "blue" : "",
+                background: isDev ? "blue" : "",
                 ...props.style,
             }}
         ></div>
